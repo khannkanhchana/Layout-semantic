@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        table {
+            width: 50%;
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 5px;
+            
+        }
+        tr:nth-child(even) {
+            background-color:rgb(226, 216, 225);
+        }
+        tfoot{
+            text-align: right;
+            background-color:aliceblue;
+        }
+        .name{
+            background-color: rgb(153, 201, 216);
+            
+            
+        }
+        .table-header {
+            background-color: aliceblue;
+        }
+        .id{
+            text-align: center;
+        }
+        .balance{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="table-header">
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Membership Dates</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(203, 252, 236);">Joined</th>
+                <th style="background-color: antiquewhite;">Canceled</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">Margaret Nguyen</td>
+                <td class="id">427311</td>
+                <td>June 3,2010</td>
+                <td>n/a</td>
+                <td class="balance">0.00</td>
+            </tr>
+            <tr>
+                <td class="name">Edvard Galinski</td>
+                <td class="id">533175</td>
+                <td>January 13,2011</td>
+                <td>April 8,2017</td>
+                <td class="balance">37.00</td>
+            </tr>
+            <tr>
+                <td class="name">Hoshi Nakamura</td>
+                <td class="id">601942</td>
+                <td>July 23,2012</td>
+                <td>n/a</td>
+                <td class="balance">15.00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total balance</th>
+                <th>52.00</th>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>

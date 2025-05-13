@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 50%;
+            /* border-radius: 10px; */
+            
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .table-header {
+            color: white;
+        }
+        th,td {
+            padding: 5px;
+            
+        }
+        th {
+            background-color: #e991eb;
+        }
+        tr:nth-child(even) {
+            background-color:rgb(226, 216, 225);
+        }
+        .number{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="table-header">
+                <th>No</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+            </tr>
+
+        </thead >
+        <tbody class="table-body">
+            <tr>
+                <td class="number">1</td>
+                <td>1000</td>
+                <td>Kanhchana</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td>1001</td>
+                <td>James</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td>1002</td>
+                <td>kanika</td>
+                <td>Female</td>
+            </tr>
+             <tr>
+                <td class="number">4</td>
+                <td>1003</td>
+                <td>kanha</td>
+                <td>Female</td>
+            </tr>
+             <tr>
+                <td class="number">5</td>
+                <td>1004</td>
+                <td>ka</td>
+                <td>Female</td>
+            </tr>
+
+
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
